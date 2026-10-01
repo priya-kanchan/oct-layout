@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aqua Vista Residences | Luxury 2, 3 &amp; 4 BHK Homes</title>
+  <meta name="description"
+    content="Aqua Vista Residences – premium lake-facing 2, 3 & 4 BHK apartments with 40+ lifestyle amenities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- SVG water filter (used by hero background) -->
+  <svg class="svg-defs" aria-hidden="true">
+    <filter id="water">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.02" numOctaves="2" seed="3" result="noise">
+        <animate attributeName="baseFrequency" dur="18s" values="0.008 0.02;0.012 0.03;0.008 0.02"
+          repeatCount="indefinite" />
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="18" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
+  <!-- Liquid background blobs -->
+  <div class="blobs" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="blob b4"></span>
+  </div>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span><i class="fa-solid fa-certificate"></i> Project RERA No: GGM/671/403/2023/15</span>
+      <div class="topbar-links">
+        <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+        <a href="https://api.whatsapp.com/send?phone=+919999142233  &amp;text=Hello, Looking for project name At location. Get in touch with me my name is"
+          target="_blank"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark"><i class="fa-solid fa-water"></i></span>
+        <span class="logo-text">Aqua<b>Vista</b></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#pricing">Price List</a>
+        <a href="#floorplan">Floor Plan</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#location">Location</a>
+        <a href="#builder">Builder</a>
+      </nav>
+      <button class="btn btn-primary nav-cta ripple" data-open-modal>Enquire Now</button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <span class="chip glass"><i class="fa-solid fa-location-dot"></i> Lake-Facing Luxury · Whitefield, Bangalore</span>
+        <h1>Project <em>Name</em></h1>
+        <p class="hero-tagline">Where Premium Living Meets Timeless Elegance</p>
+        <ul class="hero-points">
+          <li><i class="fa-solid fa-mountain-sun"></i><span><strong>6.5 Acres</strong>Lake-facing estate</span></li>
+          <li><i class="fa-solid fa-tree"></i><span><strong>75% Open</strong>Landscaped green space</span></li>
+          <li><i class="fa-solid fa-water"></i><span><strong>1.2 km</strong>Lakeside promenade</span></li>
+          <li><i class="fa-solid fa-gem"></i><span><strong>40+ Amenities</strong>World-class lifestyle</span></li>
+        </ul>
+        <!-- <p>Premium 2, 3 &amp; 4 BHK residences across 6.5 acres, with 75% open space, a 1.2 km lakeside promenade and
+          40+ world-class amenities.</p> -->
+        <div class="hero-price glass">
+          <div><small>Starting from</small><strong>₹ 1.25 Cr<sup>*</sup></strong></div>
+          <div class="divider"></div>
+          <div><small>Possession</small><strong>Dec 2028</strong></div>
+          <div class="divider"></div>
+          <div><small>Configurations</small><strong>2, 3 & 4 BHK</strong></div>
+        </div>
+        <div class="hero-btns">
+          <button class="btn btn-primary ripple" data-open-modal><i class="fa-solid fa-download"></i> Download
+            Brochure</button>
+          <a href="#floorplan" class="btn btn-glass ripple"><i class="fa-solid fa-vector-square"></i> View Floor
+            Plans</a>
+        </div>
+      </div>
+
+      <form class="hero-form glass reveal" data-form>
+        <h3>Book a Site Visit</h3>
+        <p>Get exclusive pre-launch offers</p>
+        <div class="field"><i class="fa-regular fa-user"></i><input type="text" placeholder="Full Name" required />
+        </div>
+        <div class="field"><i class="fa-solid fa-phone"></i><input type="tel" placeholder="Mobile Number"
+            pattern="[0-9+\s]{10,14}" required /></div>
+        <div class="field"><i class="fa-regular fa-envelope"></i><input type="email" placeholder="Email Address"
+            required /></div>
+        <div class="field" bis_skin_checked="1"><i class="fa-solid fa-message"></i><input type="tel"
+            placeholder="Message" required=""></div>
+        <button type="submit" class="btn btn-primary btn-block ripple">Get Callback <i
+            class="fa-solid fa-arrow-right"></i></button>
+        <label class="check"><input type="checkbox" required=""> I authorize company representatives to Call, SMS, Email or
+        WhatsApp me about its products and offers.This consent overrides any registration for DNC/NDNC.</label>
+      </form>
+    </div>
+
+    <a href="#overview" class="scroll-down" aria-label="Scroll down"><span></span></a>
+
+    <div class="waves" aria-hidden="true">
+      <svg viewBox="0 24 150 28" preserveAspectRatio="none">
+        <defs>
+          <path id="wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+        </defs>
+        <g class="wave-parallax">
+          <use href="#wave" x="48" y="0" />
+          <use href="#wave" x="48" y="3" />
+          <use href="#wave" x="48" y="5" />
+          <use href="#wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ================= OVERVIEW ================= -->
+  <section class="section" id="overview">
+    <div class="container overview-grid">
+      <div class="overview-media reveal">
+        <div class="img-frame glass">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80"
+            alt="Aqua Vista tower exterior" loading="lazy" />
+        </div>
+        <div class="floating-badge glass">
+          <i class="fa-solid fa-award"></i>
+          <div><strong>IGBC Gold</strong><small>Pre-certified green homes</small></div>
+        </div>
+      </div>
+      <div class="overview-text reveal">
+        <span class="eyebrow">Project Overview</span>
+        <h2 class="section-title">A calm, lake-side address<br />built around <em>you</em></h2>
+        <p>Aqua Vista Residences is a landmark development of 4 towers rising 32 floors, facing the serene Varthur lake.
+          Each home is designed for natural light and cross-ventilation, with wide sundecks that bring the water views
+          indoors.</p>
+        <p>Because only 4 homes share each floor, you get privacy, three sides open and no common walls with the lift
+          lobby.</p>
+        <div class="stats">
+          <div class="stat glass"><strong data-count="6.5">0</strong><span>Acres Land</span></div>
+          <div class="stat glass"><strong data-count="4">0</strong><span>Towers</span></div>
+          <div class="stat glass"><strong data-count="32">0</strong><span>Storeys</span></div>
+          <div class="stat glass"><strong data-count="512">0</strong><span>Residences</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HIGHLIGHTS ================= -->
+  <section class="section section-tint" id="highlights">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Why Aqua Vista</span>
+        <h2 class="section-title">Project <em>Highlights</em></h2>
+        <p>Every detail designed to make everyday living feel effortless.</p>
+      </div>
+      <div class="highlight-grid">
+        <div class="h-card glass reveal">
+          <div class="icon-bubble"><i class="fa-solid fa-water"></i></div>
+          <h4>Lake Views</h4>
+          <p>90% of homes have direct views of the 120-acre Varthur lake.</p>
+        </div>
+        <div class="h-card glass reveal">
+          <div class="icon-bubble"><i class="fa-solid fa-tree"></i></div>
+          <h4>75% Open Space</h4>
+          <p>Landscaped gardens, a central forest and car-free podium.</p>
+        </div>
+        <div class="h-card glass reveal">
+          <div class="icon-bubble"><i class="fa-solid fa-building-shield"></i></div>
+          <h4>Seismic Zone-II Design</h4>
+          <p>Mivan shear-wall construction for strength and a long life.</p>
+        </div>
+        <div class="h-card glass reveal">
+          <div class="icon-bubble"><i class="fa-solid fa-solar-panel"></i></div>
+          <h4>Green Living</h4>
+          <p>Solar-powered common areas, rainwater harvesting and STP.</p>
+        </div>
+        <div class="h-card glass reveal">
+          <div class="icon-bubble"><i class="fa-solid fa-house-signal"></i></div>
+          <h4>Smart Homes</h4>
+          <p>App-controlled lighting, video door phone and digital locks.</p>
+        </div>
+        <div class="h-card glass reveal">
+          <div class="icon-bubble"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>5-Tier Security</h4>
+          <p>Boom barriers, CCTV, RFID access and 24×7 manned security.</p>
+        </div>
+        <div class="h-card glass reveal">
+          <div class="icon-bubble"><i class="fa-solid fa-person-swimming"></i></div>
+          <h4>60,000 sq.ft Clubhouse</h4>
+          <p>A 5-level clubhouse with an infinity-edge rooftop pool.</p>
+        </div>
+        <div class="h-card glass reveal">
+          <div class="icon-bubble"><i class="fa-solid fa-train-subway"></i></div>
+          <h4>Near the Metro</h4>
+          <p>800 m from the upcoming Kadugodi Purple Line metro station.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AMENITIES ================= -->
+  <section class="section" id="amenities">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Lifestyle</span>
+        <h2 class="section-title">World-class <em>Amenities</em></h2>
+        <p>40+ curated amenities for every age and every mood.</p>
+      </div>
+      <div class="amenity-grid">
+        <div class="amenity glass reveal"><i class="fa-solid fa-person-swimming"></i><span>Infinity Pool</span></div>
+        <div class="amenity glass reveal"><i class="fa-solid fa-dumbbell"></i><span>Gymnasium</span></div>
+        <div class="amenity glass reveal"><i class="fa-solid fa-spa"></i><span>Spa &amp; Sauna</span></div>
+        <div class="amenity glass reveal"><i class="fa-solid fa-baseball-bat-ball"></i><span>Cricket Pitch</span></div>
+        <div class="amenity glass reveal"><i class="fa-solid fa-table-tennis-paddle-ball"></i><span>Indoor Games</span>
+        </div>
+        <div class="amenity glass reveal"><i class="fa-solid fa-person-running"></i><span>Jogging Track</span></div>
+        <div class="amenity glass reveal"><i class="fa-solid fa-children"></i><span>Kids' Play Area</span></div>
+        <div class="amenity glass reveal"><i class="fa-solid fa-film"></i><span>Mini Theatre</span></div>
+        <div class="amenity glass reveal"><i class="fa-solid fa-laptop-house"></i><span>Co-working Lounge</span></div>
+        <div class="amenity glass reveal"><i class="fa-solid fa-champagne-glasses"></i><span>Party Hall</span></div>
+        <div class="amenity glass reveal"><i class="fa-solid fa-om"></i><span>Yoga Deck</span></div>
+        <div class="amenity glass reveal"><i class="fa-solid fa-dog"></i><span>Pet Park</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRICE LIST ================= -->
+  <section class="section section-tint" id="pricing">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Investment</span>
+        <h2 class="section-title">Price <em>List</em></h2>
+        <p>Transparent pricing with no hidden charges. Pre-launch offers are open for a limited time.</p>
+      </div>
+      <div class="price-layout">
+        <aside class="price-aside glass reveal">
+          <div class="aside-img">
+            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=900&q=80"
+              alt="Aqua Vista infinity pool" loading="lazy" />
+            <span class="offer-tag"><i class="fa-solid fa-bolt"></i> Pre-launch Offer</span>
+          </div>
+          <div class="aside-body">
+            <small>Starting price</small>
+            <div class="aside-price">₹ 1.25 Cr<sup>*</sup></div>
+            <p>Onwards, all inclusive</p>
+            <h6>Easy Payment Plan</h6>
+            <div class="pay-plan">
+              <div><strong>10%</strong><span>On Booking</span></div>
+              <div><strong>80%</strong><span>Construction</span></div>
+              <div><strong>10%</strong><span>Possession</span></div>
+            </div>
+            <button class="btn btn-primary btn-block ripple" data-open-modal><i class="fa-solid fa-file-invoice"></i>
+              Get Cost Sheet</button>
+          </div>
+        </aside>
+
+        <div class="price-table" role="table" aria-label="Price list">
+          <div class="pt-head" role="row">
+            <span role="columnheader">Configuration</span>
+            <span role="columnheader">Super Area</span>
+            <span role="columnheader">Price</span>
+            <span role="columnheader">Action</span>
+          </div>
+
+          <div class="pt-row glass reveal" role="row" style="--level: 34%">
+            <div class="pt-type" role="cell"><span class="pt-bubble">2</span>
+              <div><strong>2 BHK</strong><small>2 Bed · 2 Bath · 1 Parking</small></div>
+            </div>
+            <!-- <div class="pt-cell" role="cell" data-label="Carpet Area">845 <small>sq.ft</small></div> -->
+            <div class="pt-cell" role="cell" data-label="Super Area">1,150 – 1,280 <small>sq.ft</small></div>
+            <div class="pt-cell pt-price" role="cell" data-label="Price">₹ 1.25 Cr<sup>*</sup></div>
+            <button class="btn btn-glass pt-btn ripple" data-open-modal>Price Breakup <i
+                class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <div class="pt-row glass featured reveal" role="row" style="--level: 57%">
+            <div class="pt-type" role="cell"><span class="pt-bubble">3</span>
+              <div><strong>3 BHK </strong><small>3 Bed · 3 Bath · 2 Parking</small>
+              </div>
+            </div>
+            <!-- <div class="pt-cell" role="cell" data-label="Carpet Area">1,210 <small>sq.ft</small></div> -->
+            <div class="pt-cell" role="cell" data-label="Super Area">1,650 – 1,780 <small>sq.ft</small></div>
+            <div class="pt-cell pt-price" role="cell" data-label="Price">₹ 1.85 Cr<sup>*</sup></div>
+            <button class="btn btn-primary pt-btn ripple" data-open-modal>Price Breakup <i
+                class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <div class="pt-row glass reveal" role="row" style="--level: 78%">
+            <div class="pt-type" role="cell"><span class="pt-bubble">3.5</span>
+              <div><strong>3.5 BHK</strong><small>3 Bed + Study · 2 Parking</small></div>
+            </div>
+            <!-- <div class="pt-cell" role="cell" data-label="Carpet Area">1,430 <small>sq.ft</small></div> -->
+            <div class="pt-cell" role="cell" data-label="Super Area">1,950 – 2,080 <small>sq.ft</small></div>
+            <div class="pt-cell pt-price" role="cell" data-label="Price">₹ 2.20 Cr<sup>*</sup></div>
+            <button class="btn btn-glass pt-btn ripple" data-open-modal>Price Breakup <i
+                class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <div class="pt-row glass reveal" role="row" style="--level: 100%">
+            <div class="pt-type" role="cell"><span class="pt-bubble">4</span>
+              <div><strong>4 BHK</strong><small>4 Bed · 4 Bath · 3 Parking</small></div>
+            </div>
+            <!-- <div class="pt-cell" role="cell" data-label="Carpet Area">1,820 <small>sq.ft</small></div> -->
+            <div class="pt-cell" role="cell" data-label="Super Area">2,450 – 2,700 <small>sq.ft</small></div>
+            <div class="pt-cell pt-price" role="cell" data-label="Price">₹ 2.95 Cr<sup>*</sup></div>
+            <button class="btn btn-glass pt-btn ripple" data-open-modal>Price Breakup <i
+                class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FLOOR PLAN ================= -->
+  <section class="section" id="floorplan">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Layouts</span>
+        <h2 class="section-title">Floor <em>Plans</em></h2>
+        <p>Efficient layouts with no wasted space and more than 80% carpet efficiency.</p>
+      </div>
+      <div class="tabs glass reveal" role="tablist">
+        <button class="tab active" data-plan="0" role="tab">2 BHK</button>
+        <button class="tab" data-plan="1" role="tab">3 BHK</button>
+        <button class="tab" data-plan="2" role="tab">4 BHK</button>
+        <span class="tab-indicator"></span>
+      </div>
+      <div class="plan-wrap glass reveal">
+        <div class="plan-svg" id="planSvg"></div>
+        <div class="plan-info">
+          <h3 id="planTitle">2 BHK Residence</h3>
+          <p id="planDesc"></p>
+          <div class="plan-specs" id="planSpecs"></div>
+          <button class="btn btn-primary ripple" data-open-modal><i class="fa-solid fa-unlock"></i> Unlock Detailed
+            Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section class="section section-tint" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Visual Tour</span>
+        <h2 class="section-title">Project <em>Gallery</em></h2>
+        <p>A glimpse of life at Aqua Vista. Tap any image to view it full size.</p>
+      </div>
+      <div class="gallery-grid" id="gallery-grid">
+        <figure class="g-item tall reveal"><img
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80"
+            alt="Villa with pool at dusk" loading="lazy" />
+          <figcaption>Poolside Deck</figcaption>
+        </figure>
+        <figure class="g-item reveal"><img
+            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80"
+            alt="Living room" loading="lazy" />
+          <figcaption>Living Room</figcaption>
+        </figure>
+        <figure class="g-item reveal"><img
+            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
+            alt="Modular kitchen" loading="lazy" />
+          <figcaption>Modular Kitchen</figcaption>
+        </figure>
+        <figure class="g-item wide reveal"><img
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80"
+            alt="Modern building exterior" loading="lazy" />
+          <figcaption>Elevation</figcaption>
+        </figure>
+        <figure class="g-item reveal"><img
+            src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=80"
+            alt="Master bedroom" loading="lazy" />
+          <figcaption>Master Bedroom</figcaption>
+        </figure>
+        <figure class="g-item tall reveal"><img
+            src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=900&q=80"
+            alt="Swimming pool" loading="lazy" />
+          <figcaption>Infinity Pool</figcaption>
+        </figure>
+        <figure class="g-item reveal"><img
+            src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80"
+            alt="Apartment interior" loading="lazy" />
+          <figcaption>Dining Area</figcaption>
+        </figure>
+        <figure class="g-item reveal"><img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+            alt="Interior lounge" loading="lazy" />
+          <figcaption>Clubhouse Lounge</figcaption>
+        </figure>
+        <figure class="g-item reveal"><img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+            alt="Interior lounge" loading="lazy" />
+          <figcaption>Clubhouse Lounge</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LOCATION ================= -->
+  <section class="section" id="location">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Connectivity</span>
+        <h2 class="section-title">Prime <em>Location</em></h2>
+        <p>Close to IT hubs, schools, hospitals and shopping, yet far enough from the city noise.</p>
+      </div>
+      <div class="location-grid">
+        <div class="map-wrap glass reveal">
+          <iframe title="Project location map"
+            src="https://maps.google.com/maps?q=Whitefield%20Bangalore&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="loc-list reveal">
+          <div class="loc-group glass">
+            <h4><i class="fa-solid fa-briefcase"></i> Business Hubs</h4>
+            <ul>
+              <li>ITPL Tech Park <span>3.2 km</span></li>
+              <li>EPIP Zone <span>4.5 km</span></li>
+              <li>Brigade Tech Gardens <span>6 km</span></li>
+            </ul>
+          </div>
+          <div class="loc-group glass">
+            <h4><i class="fa-solid fa-graduation-cap"></i> Schools</h4>
+            <ul>
+              <li>Deens Academy <span>1.8 km</span></li>
+              <li>Ryan International <span>2.6 km</span></li>
+              <li>Inventure Academy <span>7 km</span></li>
+            </ul>
+          </div>
+          <div class="loc-group glass">
+            <h4><i class="fa-solid fa-hospital"></i> Healthcare</h4>
+            <ul>
+              <li>Manipal Hospital <span>3 km</span></li>
+              <li>Columbia Asia <span>4.1 km</span></li>
+            </ul>
+          </div>
+          <div class="loc-group glass">
+            <h4><i class="fa-solid fa-plane"></i> Transit &amp; Leisure</h4>
+            <ul>
+              <li>Kadugodi Metro <span>0.8 km</span></li>
+              <li>Phoenix Marketcity <span>6.5 km</span></li>
+              <li>Kempegowda Airport <span>38 km</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT BUILDER ================= -->
+  <section class="section section-tint" id="builder">
+    <div class="container builder-grid">
+      <div class="builder-text reveal">
+        <span class="eyebrow">About the Developer</span>
+        <h2 class="section-title">Aqualine <em>Developers</em></h2>
+        <p>For over 25 years, Aqualine Developers has built homes that last, with on-time delivery, honest construction
+          and thoughtful design. More than 18,000 families across Bangalore, Pune and Hyderabad now call an Aqualine
+          home their own.</p>
+        <p>Our philosophy is simple: build with nature, not against it. Every project is planned around light, air,
+          water and open space.</p>
+        <div class="builder-stats">
+          <div class="b-stat glass"><strong data-count="25">0</strong><span>Years of Trust</span></div>
+          <div class="b-stat glass"><strong data-count="42">0</strong><span>Projects Delivered</span></div>
+          <div class="b-stat glass"><strong data-count="18">0</strong><span>K+ Happy Families</span></div>
+          <div class="b-stat glass"><strong data-count="21">0</strong><span>M sq.ft Built</span></div>
+        </div>
+      </div>
+      <div class="builder-media reveal">
+        <div class="img-frame glass">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+            alt="Completed Aqualine project" loading="lazy" />
+        </div>
+        <div class="floating-badge glass alt">
+          <i class="fa-solid fa-trophy"></i>
+          <div><strong>Best Developer 2025</strong><small>Realty Excellence Awards</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA STRIP ================= -->
+  <section class="cta-strip">
+    <div class="container cta-inner glass reveal">
+      <div>
+        <h3>Pre-launch offer: save up to ₹ 12 Lakh*</h3>
+        <p>Book a site visit this week and get a free modular kitchen and 2 years of free maintenance.</p>
+      </div>
+      <button class="btn btn-primary ripple" data-open-modal>Claim Offer <i
+          class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="waves footer-waves" aria-hidden="true">
+      <svg viewBox="0 24 150 28" preserveAspectRatio="none">
+        <g class="wave-parallax">
+          <use href="#wave" x="48" y="0" />
+          <use href="#wave" x="48" y="3" />
+          <use href="#wave" x="48" y="5" />
+          <use href="#wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <!-- <div class="container footer-grid">
+      <div class="f-col">
+        <a href="#home" class="logo">
+          <span class="logo-mark"><i class="fa-solid fa-water"></i></span>
+          <span class="logo-text">Aqua<b>Vista</b></span>
+        </a>
+        <p>Luxury lake-facing residences by Aqualine Developers. Sales office: Survey No. 42, Varthur-Kadugodi Road, Whitefield, Bangalore – 560066.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook" class="glass"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram" class="glass"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube" class="glass"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn" class="glass"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h5>Quick Links</h5>
+        <a href="#overview">Overview</a><a href="#amenities">Amenities</a><a href="#pricing">Price List</a><a href="#floorplan">Floor Plans</a><a href="#gallery">Gallery</a>
+      </div>
+      <div class="f-col">
+        <h5>Contact</h5>
+        <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+        <a href="mailto:sales@aquavista.in"><i class="fa-solid fa-envelope"></i> sales@aquavista.in</a>
+        <a href="#location"><i class="fa-solid fa-location-dot"></i> Whitefield, Bangalore</a>
+      </div>
+      <div class="f-col">
+        <h5>Newsletter</h5>
+        <p>Get construction updates and offers.</p>
+        <form class="newsletter glass" data-form>
+          <input type="email" placeholder="Your email" required />
+          <button type="submit" class="ripple" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div> -->
+    <div class="container legal">
+      <div class="rera-row">
+        <div class="rera-card glass">
+          <span class="rera-icon"><i class="fa-solid fa-user-shield"></i></span>
+          <div class="rera-text"><small>Agent RERA No.</small><strong>RC/HARERA/GGM/2727/2322/2024/440</strong></div>
+          <!-- <button class="rera-copy" data-copy="RC/HARERA/GGM/2727/2322/2024/440" aria-label="Copy Agent RERA number"><i
+              class="fa-regular fa-copy"></i></button> -->
+        </div>
+        <div class="rera-card glass">
+          <span class="rera-icon"><i class="fa-solid fa-building-circle-check"></i></span>
+          <div class="rera-text"><small>Project RERA No.</small><strong>GGM/671/403/2023/15</strong></div>
+          <!-- <button class="rera-copy" data-copy="GGM/671/403/2023/15" aria-label="Copy Project RERA number"><i
+              class="fa-regular fa-copy"></i></button> -->
+        </div>
+      </div>
+
+      <div class="disclaimer-box glass" id="disclaimerBox">
+        <div class="disc-head"><i class="fa-solid fa-circle-info"></i>
+          <h6>Disclaimer</h6>
+        </div>
+        <p>The content provided on this website is for information purposes only and does not constitute an offer to
+          avail any service. The prices mentioned are subject to change without prior notice, and the availability of
+          properties mentioned is not guaranteed.</p>
+        <div class="disc-more" id="discMore">
+          <div>
+            <p>Images, walkthroughs, floor plans and specifications shown are artistic impressions and indicative only.
+              They may differ from the actual product. Visitors are advised to check all details, including approvals,
+              carpet area, pricing and payment plans, with our sales team and on the official RERA website before making
+              a booking decision. By using this website you agree to be contacted by us or our authorised partners by
+              phone, SMS, email or WhatsApp.</p>
+          </div>
+        </div>
+        <button class="read-more" id="readMore" aria-expanded="false" aria-controls="discMore">
+          <span>Read more</span> <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+
+      <div class="legal-bottom">
+        <p class="copy">© 2026 Aqualine Developers. All rights reserved.</p>
+        <p class="credits">
+          <a href="#" class="legal-link">Disclaimer &amp; Privacy Policy</a>
+          <span class="sep" aria-hidden="true"></span>
+          <span>Digital Media Planned By <a href="https://www.gtftechnologies.com" target="_blank" rel="noopener"
+              class="legal-link">GTF Technologies</a></span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= STICKY ACTION BAR ================= -->
+  <div class="action-bar glass" id="actionBar">
+    <a href="tel:+919876543210" class="ripple"><i class="fa-solid fa-phone"></i><span>Call</span></a>
+    <a href="https://api.whatsapp.com/send?phone=+919999142233  &amp;text=Hello, Looking for project name At location. Get in touch with me my name is"
+      target="_blank" rel="noopener" class="ripple"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+    <button class="ripple primary" data-open-modal><i class="fa-solid fa-paper-plane"></i><span>Enquire</span></button>
+    <!-- <button class="ripple" data-open-modal><i class="fa-solid fa-file-arrow-down"></i><span>Brochure</span></button> -->
+  </div>
+
+  <button class="to-top glass" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- ================= ENQUIRY MODAL ================= -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <form class="modal-box glass" data-form role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close" data-close-modal aria-label="Close"><i
+          class="fa-solid fa-xmark"></i></button>
+      <div class="icon-bubble"><i class="fa-solid fa-droplet"></i></div>
+      <h3 id="modalTitle">Project Name</h3>
+      <p>Our relationship manager will call you within 30 minutes.</p>
+      <div class="field"><i class="fa-regular fa-user"></i><input type="text" placeholder="Full Name" required /></div>
+      <div class="field"><i class="fa-solid fa-phone"></i><input type="tel" placeholder="Mobile Number"
+          pattern="[0-9+\s]{10,14}" required /></div>
+      <div class="field"><i class="fa-regular fa-envelope"></i><input type="email" placeholder="Email Address"
+          required /></div>
+      <div class="field"><i class="fa-solid fa-message"></i><input type="tel" placeholder="Message" required /></div>
+      <label class="check"><input type="checkbox" required /> I authorize company representatives to Call, SMS, Email or
+        WhatsApp me about its products and offers.This consent overrides any registration for DNC/NDNC.</label>
+      <button type="submit" class="btn btn-primary btn-block ripple">Submit <i
+          class="fa-solid fa-arrow-right"></i></button>
+    </form>
+  </div>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-btn lb-close glass" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lb-btn lb-prev glass" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <figure><img id="lbImg" src="" alt="" />
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lb-btn lb-next glass" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <div class="toast glass" id="toast"><i class="fa-solid fa-circle-check"></i> Thank you! We'll get in touch shortly.
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
